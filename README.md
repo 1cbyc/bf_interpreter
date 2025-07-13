@@ -2,6 +2,8 @@
 
 A fast, efficient, and well-documented Brainfuck interpreter written in Rust. This project provides a complete implementation of the Brainfuck esoteric programming language with robust error handling, optimization, and a clean command-line interface.
 
+[![GitHub Repo](https://img.shields.io/badge/github-1cbyc%2Fbf__interpreter-blue?logo=github)](https://github.com/1cbyc/bf_interpreter)
+
 ## What is Brainfuck?
 
 Brainfuck is an esoteric programming language created by Urban Müller in 1993. It consists of only 8 commands and operates on a tape of memory cells, each initially set to zero. The language is Turing-complete, meaning it can compute anything that any other programming language can compute.
@@ -39,8 +41,8 @@ Brainfuck is an esoteric programming language created by Urban Müller in 1993. 
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/brainfuck-interpreter-rust.git
-cd brainfuck-interpreter-rust
+git clone https://github.com/1cbyc/bf_interpreter.git
+cd bf_interpreter
 
 # Build in release mode for optimal performance
 cargo build --release
@@ -72,7 +74,7 @@ cargo run -- --debug examples/hello_world.bf
 # Set memory size (default: 30000 cells)
 cargo run -- --memory-size 50000 examples/hello_world.bf
 
-# Enable optimization (default: enabled)
+# Enable/disable optimization (default: enabled)
 cargo run -- --no-optimize examples/hello_world.bf
 ```
 
@@ -109,7 +111,11 @@ src/
 ├── parser.rs            # Parsing tokens into instructions
 ├── interpreter.rs       # Execution engine
 ├── optimizer.rs         # Instruction optimization
-└── error.rs            # Error types and handling
+├── error.rs             # Error types and handling
+examples/
+├── hello_world.bf       # Hello World example
+├── simple_counter.bf    # Simple counter example
+├── input_test.bf        # Input/output example
 ```
 
 ## Architecture
@@ -117,7 +123,7 @@ src/
 The interpreter follows a classic three-stage architecture:
 
 1. **Lexer**: Converts source code into tokens
-2. **Parser**: Converts tokens into executable instructions
+2. **Optimizer**: Combines tokens into efficient instructions
 3. **Interpreter**: Executes the instructions
 
 ### Key Design Decisions
@@ -144,8 +150,8 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 
 ```bash
 # Clone and setup
-git clone https://github.com/yourusername/brainfuck-interpreter-rust.git
-cd brainfuck-interpreter-rust
+git clone https://github.com/1cbyc/bf_interpreter.git
+cd bf_interpreter
 
 # Run tests
 cargo test
