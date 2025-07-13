@@ -1,0 +1,29 @@
+# Rust
+/target/
+**/*.rs.bk
+Cargo.lock
+
+# IDEs and editors
+/.idea/
+/.vscode/
+*.swp
+*.swo
+*.sublime*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Byproducts
+*.log
+*.tmp
+*.bak
+
+# Misc
+*.old
+*.orig
+*.rej
+
+# Tests and examples
+/examples/*.out
+/examples/*.log
