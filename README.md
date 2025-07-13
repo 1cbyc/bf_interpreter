@@ -4,7 +4,7 @@ A fast, efficient, and well-documented Brainfuck interpreter written in Rust. Th
 
 [![GitHub Repo](https://img.shields.io/badge/github-1cbyc%2Fbf__interpreter-blue?logo=github)](https://github.com/1cbyc/bf_interpreter)
 
-## What is Brainfuck?
+## Do you know Brainfuck?
 
 Brainfuck is an esoteric programming language created by Urban Müller in 1993. It consists of only 8 commands and operates on a tape of memory cells, each initially set to zero. The language is Turing-complete, meaning it can compute anything that any other programming language can compute.
 
