@@ -1,3 +1,5 @@
+> **Licensing update (31 October 2026):** The current policy requires prior written permission for reuse and a separate agreement for AI training. See [LICENSE](LICENSE). Earlier grants remain valid for previously licensed material; [LICENSE.previous](LICENSE.previous) preserves those terms. Any older license descriptions below describe the previous policy. Contact [ei@nsisong.com](mailto:ei@nsisong.com).
+
 # Brainfuck Interpreter
 
 A fast, efficient, and well-documented Brainfuck interpreter written in Rust. This project provides a complete implementation of the Brainfuck esoteric programming language with robust error handling, optimization, and a clean command-line interface.
